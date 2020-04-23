@@ -16,14 +16,14 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", { useNewUrlParser: true });
 
-// app.use(require("./routes/apiRoutes.js"));
-// app.use(require("./routes/htmlRoutes.js"));
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
-const apiRoutes = require("./routes/apiRoutes.js");
-app.use(apiRoutes);
+// const apiRoutes = require("./routes/apiRoutes.js");
+// app.use(apiRoutes);
 
-const htmlRoutes = require("./routes/htmlRoutes.js");
-app.use(htmlRoutes);
+// const htmlRoutes = require("./routes/htmlRoutes.js");
+// app.use(htmlRoutes);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
