@@ -33,6 +33,6 @@ Screenshots of application:
 
 ## LINKS
 
-* [Deployed Application]()
+* [Deployed Application](https://lit-cove-49487.herokuapp.com/)
 
 * [Github Repository](https://github.com/smithse4/17-fitness-tracker)
