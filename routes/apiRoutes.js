@@ -6,12 +6,15 @@ module.exports = function (app) {
       .then((allWorkouts) => {
         res.json(allWorkouts);
       })
+      // populate
       .catch((err) => {
         res.json(err);
       });
   });
 
   app.post("/api/workouts", (req, res) => {
+    console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    console.log(req.body);
     Workout.create(req.body)
       .then((createdWorkout) => {
         res.json(createdWorkout);
@@ -24,10 +27,11 @@ module.exports = function (app) {
   });
 
   app.get("/api/workouts/range", (req, res) => {
-    Workout.find({})
+    Workout.find({}).limit(7)
       .then((data) => {
         res.json(data);
       })
+      // throw a popopulat
       .catch((err) => {
         console.log(err);
         res.status(500);
@@ -36,6 +40,11 @@ module.exports = function (app) {
   });
 
   app.put("/api/workouts/:id", ({ body, params }, res) => {
+    console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    console.log('blahblah', body)
+    // add new exercise
+    // then push the id of the new exercise into the workout exercise array 
+    // then you send omethng
     Workout.findOneAndUpdate(params.id,
         { $push: { exercises: body }},
         { new: true, runValidators: true })
