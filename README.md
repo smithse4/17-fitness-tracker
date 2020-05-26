@@ -28,7 +28,16 @@ The user is able to:
 
   * View the combined weight of multiple exercises on the `stats` page.
 
-Screenshots of application:
+## Installing
+
+To run the app locally, you will first need to git clone the repository to your local machine.
+
+* Cd into repository
+* Install dependencies by running 'npm install'
+* Install seed data by running 'npm run seed'
+* Start app by running 'node server.js'
+
+## Screenshots of application:
 
 ![Fitness Tracker](./public/img/fitness-tracker.png)
 
