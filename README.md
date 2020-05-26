@@ -1,6 +1,12 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# NoSQL Workout Tracker
 
-For this assignment, I've created a workout tracker. I was provided with the front end code. This assignment required me to create a Mongo database with a Mongoose schema and handle routes with Express.
+This application is a workout tracker. I was provided with the front end code. I created a Mongo database with a Mongoose schema and handled routes with Express.
+
+## Links
+
+* [Deployed Application](https://stephtracker.herokuapp.com/)
+
+* [Github Repository](https://github.com/smithse4/17-fitness-tracker)
 
 ## User Story
 
@@ -10,17 +16,17 @@ For this assignment, I've created a workout tracker. I was provided with the fro
 
 A consumer will reach their fitness goals quicker when they track their workout progress.
 
-## Acceptance Criteria
+## Utility
 
-When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
+When the user loads the page, they are given the option to create a new workout, or continue with their last workout.
 
-The user should be able to:
+The user is able to:
 
   * Add exercises to a previous workout plan.
 
   * Add new exercises to a new workout plan.
 
-  * View multiple the combined weight of multiple exercises on the `stats` page.
+  * View the combined weight of multiple exercises on the `stats` page.
 
 Screenshots of application:
 
@@ -31,8 +37,3 @@ Screenshots of application:
 ![Stats](./public/img/stats.png)
 
 
-## LINKS
-
-* [Deployed Application](https://lit-cove-49487.herokuapp.com/)
-
-* [Github Repository](https://github.com/smithse4/17-fitness-tracker)
